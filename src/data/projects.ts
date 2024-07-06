@@ -11,68 +11,51 @@ const projects: IProjectItem[] = [
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/6531503042/ForecastAPI",
     tags: ["Java", "Spring Boot", "Jsp"],
-    screenshots: ["https://raw.githubusercontent.com/6531503042/Portfolio-BenGi/main/img/project2.png"],
+    screenshots: [
+      "https://raw.githubusercontent.com/6531503042/Portfolio-BenGi/main/img/project2.png"
+    ],
   },
   {
     id: "Deap-Appointment-App",
     title: "Deap Appointment App",
     description:
-      "An e-commerce web application developed using React.js, Material UI, Redux, and Stripe.",
+      "Deap App is an appointment mobile application developed using Flutter and Firebase.",
     icon: "/skills/flutter.svg",
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/6531503042/Deap-Mobile-Application",
     url: "https://github.com/6531503042/Deap-Mobile-Application/releases",
-    tags: ["Dart", "Flutter", "Firebase", "Stripe"],
-    screenshots: ["https://raw.githubusercontent.com/6531503042/Portfolio-BenGi/main/img/project2.png"],
+    playStore: "https://play.google.com/store/apps/details?id=com.mobileapp.deap",
+    tags: ["Dart", "Flutter", "Firebase"],
+    screenshots: [
+      "https://raw.githubusercontent.com/6531503042/Portfolio-BenGi/main/img/project2.png",
+    ]
   },
   {
-    id: "video-calling-app-flutter",
-    title: "Video Calling App",
+    id: "Gigantic-Mall",
+    title: "Gigantic-Mall",
     description:
-      "A video calling mobile application developed using Flutter and Agora SDK that allows users to call each other face to face.",
-    icon: "/skills/flutter.svg",
+      "Is a Shopping Mall for both Management & Buyer for web application developed using Spring Boot and React. And Used Microservices Architecture",
+    icon: "/skills/spring-boot.svg",
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
-    githubUrl: "https://github.com/nixrajput/video-calling-app-flutter",
-    url: "https://github.com/nixrajput/video-calling-app-flutter/releases",
-    tags: ["Flutter", "Dart", "GetX", "Agora SDK"],
+    githubUrl: "https://github.com/6531503042/Gigantic-Mall",
+    tags: ["Java", "Spring Boot", "React, MySQL, Heroku"],
+    screenshots: [
+      "/public/screenshots/gigantic.png",
+    ]
   },
   {
-    id: "social-media-api-nodejs",
-    title: "Social Media API",
+    id: "Core-Banking",
+    title: "Core-Banking",
     description:
-      "An RESTful API developed using Node.js, Express.js and MongoDB to integrate backend and frontend with ease.",
-    icon: "/skills/nestjs.svg",
+      "This is my personal backend services built using Spring boot used Microservices.",
+    icon: "/skills/spring-boot.svg",
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
-    githubUrl: "https://github.com/nixrajput/social-media-api-nodejs",
-    tags: ["Node.js", "Express.js", "MongoDB", "WebSocket"],
-  },
-  {
-    id: "grocery-list-maker-app-flutter",
-    title: "Grocery List Maker App",
-    description:
-      "A grocery list maker mobile application developed using Flutter, BloC, Hive DB and PDF.",
-    icon: "/skills/flutter.svg",
-    repoType: RepoType.Public,
-    projectType: ProjectType.Personal,
-    githubUrl: "https://github.com/nixrajput/grocery-list-maker-flutter",
-    url:
-      "https://github.com/nixrajput/grocery-list-maker-flutter/releases/latest",
-    tags: ["Flutter", "Dart", "BLoC", "PDF", "Hive"],
-  },
-  {
-    id: "e-commerce-api-nodejs",
-    title: "E-commerce API",
-    description:
-      "An RESTful API developed using Node.js, Express.js, MongoDB, and Stripe to integrate e-commerce backend.",
-    icon: "/skills/nodejs.svg",
-    repoType: RepoType.Public,
-    projectType: ProjectType.Personal,
-    githubUrl: "https://github.com/nixrajput/ecommerce-api-nodejs",
-    tags: ["Node.js", "Express.js", "MongoDB", "Stripe"],
-  },
+    githubUrl: "https://github.com/6531503042/Core-Banking",
+    tags: ["Spring Boot", "TypeScript", "Next", "GraphQL"],
+  }
 ];
 
 export default projects;

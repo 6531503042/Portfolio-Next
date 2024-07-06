@@ -62,8 +62,9 @@ const ProjectsSection1 = ({ id }: Readonly<{ id?: string }>) => {
         </AppBar>
 
         {project && project.screenshots && project.screenshots.length > 0 ? (
-          <ScreenshotGallery imageList={project.screenshots} />
-        ) : null}
+  <ScreenshotGallery imageList={Array.isArray(project.screenshots) ? project.screenshots : [project.screenshots]} />
+) : null}
+
       </ConstraintedBox>
     </ResponsiveBox>
   );

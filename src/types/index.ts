@@ -47,7 +47,8 @@ export interface IProjectItem {
   githubUrl?: string;
   url?: string;
   tags?: string[];
-  screenshots?: string[];
+  screenshots?: (string | { url: string })[];
+  playStore? :string;
   about?: string;
 }
 

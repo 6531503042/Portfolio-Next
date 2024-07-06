@@ -4,8 +4,8 @@ import { useRouter } from "next/navigation";
 import { RepoType, type IProjectItem } from "@/types";
 import { Balancer } from "react-wrap-balancer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
+import { faEye, faPlay } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import Column from "@/components/core/Column";
@@ -55,6 +55,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
           </p>
         </div>
 
+        {/* Links (GitHub, Project URL, Play Store) */}
         <Row classNames="w-full items-center justify-center mt-4 gap-2">
           {project.githubUrl ? (
             <Link
@@ -83,6 +84,20 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
               />
             </Link>
           ) : null}
+
+          {project.playStore ? (
+            <Link
+              href={project.playStore}
+              aria-label={`${project.title} Play Store URL`}
+              target="_blank"
+              className="app__outlined_btn !rounded-full !p-2 lg:!p-3 !aspect-square !border-[var(--textColor)]"
+            >
+              <FontAwesomeIcon
+                icon={faGooglePlay} // Corrected the FontAwesome icon
+                className="text-base/6 text-[var(--textColor)]"
+              />
+            </Link>
+          ) : null}
         </Row>
       </Column>
 
@@ -105,7 +120,33 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
             })}
           </Row>
         ) : null}
-      </Column>
+
+      {project.screenshots && project.screenshots.length > 0 && (
+          <div className="mt-4 grid grid-cols-2 gap-4">
+            {project.screenshots.map((screenshot, index) => (
+              <div key={`screenshot-${index}`} className="relative w-full h-full">
+                {typeof screenshot === "string" ? (
+                  <Image
+                    src={screenshot}
+                    alt={`Screenshot ${index}`}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
+                  />
+                ) : (
+                  <Image
+                    src={screenshot.url}
+                    alt={`Screenshot ${index}`}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
+                  />
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+        </Column>
     </CardBox>
   );
 };
