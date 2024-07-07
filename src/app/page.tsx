@@ -7,7 +7,7 @@ const HomeSection2 = dynamic(() => import("@/components/home/Section2"));
 // const HomeSection3 = dynamic(() => import("@/components/home/Section3"));
 const HomeSection4 = dynamic(() => import("@/components/home/Section4"));
 const HomeSection5 = dynamic(() => import("@/components/home/Section5"));
-const HomeSection6 = dynamic(() => import("@/components/home/Section6"));
+// const HomeSection6 = dynamic(() => import("@/components/home/Section6"));
 
 const FloatingNavbar = dynamic(() =>
   import("@/components/navbar/FloatingNavbar")
@@ -23,7 +23,7 @@ const Home = () => {
       {/* <HomeSection3 id="experiences" /> */}
       <HomeSection4 id="skills" />
       <HomeSection5 id="projects" />
-      <HomeSection6 id="contact" />
+      {/* <HomeSection6 id="contact" /> */}
       <ScrollToTop />
     </PageBox>
   );
