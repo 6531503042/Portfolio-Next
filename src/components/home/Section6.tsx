@@ -28,27 +28,12 @@ const HomeSection6 = ({ id }: { id: string }) => {
               );
             })}
 
-            <a href="https://www.buymeacoffee.com/nixrajput" target="_blank">
-              <img
-                className="relative flex flex-row animated__hover h-[48px] w-full object-contain"
-                src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                alt="Buy Me A Coffee"
-              />
-            </a>
-
-            <a href="https://ko-fi.com/O4O6ZD08V" target="_blank">
-              <img
-                className="relative flex flex-row animated__hover h-[48px] w-full object-contain border-none border-0"
-                src="https://storage.ko-fi.com/cdn/kofi3.png?v=3"
-                alt="Buy Me a Coffee at ko-fi.com"
-              />
-            </a>
           </GridBox>
 
           <p className="text-center mx-auto mt-16 text-2xl/6 font-semibold">
             I&apos;m{" "}
             <span className="text-[var(--primaryColor)]">available</span> for
-            freelancing.
+            Intership or Part-Time.
           </p>
         </Column>
       </ConstraintedBox>
