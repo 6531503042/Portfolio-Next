@@ -11,9 +11,7 @@ const projects: IProjectItem[] = [
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/6531503042/ForecastAPI",
     tags: ["Java", "Spring Boot", "Jsp"],
-    screenshots: [
-      "https://raw.githubusercontent.com/6531503042/Portfolio-BenGi/main/img/project2.png"
-    ],
+    screenshots: [ "https://raw.githubusercontent.com/6531503042/Portfolio-BenGi/main/img/project2.png" ],
   },
   {
     id: "Deap-Appointment-App",
@@ -41,9 +39,9 @@ const projects: IProjectItem[] = [
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/6531503042/Gigantic-Mall",
     tags: ["Java", "Spring Boot", "React, MySQL, Heroku"],
-    screenshots: [
-      "/public/screenshots/gigantic.png",
-    ]
+    // screenshots: [
+    //   "/public/screenshots/gigantic.png",
+    // ]
   },
   {
     id: "Core-Banking",

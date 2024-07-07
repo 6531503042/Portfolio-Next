@@ -19,17 +19,19 @@ const ProjectsSection1 = ({ id }: Readonly<{ id?: string }>) => {
     switch (type) {
       case ProjectType.Personal:
         return "Personal Project";
-
       case ProjectType.JobWork:
         return "Job Work";
-
       case ProjectType.Freelance:
         return "Freelance Project";
-
       default:
         return null;
     }
   };
+
+  // Transform screenshots to be an array of strings if necessary
+  const screenshots = (project?.screenshots ?? []).map((screenshot) =>
+    typeof screenshot === "string" ? screenshot : screenshot.url
+  );
 
   return (
     <ResponsiveBox classNames="bg-[var(--dialogColor)]" id={id}>
@@ -47,10 +49,9 @@ const ProjectsSection1 = ({ id }: Readonly<{ id?: string }>) => {
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL="/images/placeholder.png"
-                  className="w-full h-full object-cover aspect-square"
-                />
+                  className="w-full h-full object-cover aspect-square"/>
+                  
               </Row>
-
               <Column>
                 <p className="text-lg/6 font-semibold">{project?.title}</p>
                 <p className="text-base/6 text-[var(--textColorLight)]">
@@ -60,11 +61,9 @@ const ProjectsSection1 = ({ id }: Readonly<{ id?: string }>) => {
             </Row>
           ) : null}
         </AppBar>
-
-        {project && project.screenshots && project.screenshots.length > 0 ? (
-  <ScreenshotGallery imageList={Array.isArray(project.screenshots) ? project.screenshots : [project.screenshots]} />
-) : null}
-
+        {project && screenshots.length > 0 ? (
+          <ScreenshotGallery imageList={screenshots} />
+        ) : null}
       </ConstraintedBox>
     </ResponsiveBox>
   );

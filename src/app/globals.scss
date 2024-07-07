@@ -77,10 +77,10 @@
   --primaryColor50: rgba(0, 177, 113, 0.5);
   --primaryColor60: rgba(0, 177, 113, 0.6);
   --primaryColor70: rgba(0, 177, 113, 0.7);
-  --primaryColor80: rgba(0, 177, 113, 0.8);
-  --primaryColor90: rgba(0, 177, 113, 0.9);
-  --primaryColor100: rgba(0, 177, 113, 1);
-  --primaryColor: rgba(0, 177, 113, 1);
+  --primaryColor80: rgba(252, 203, 52, 0.8); /* Gold Yellow at 80% opacity */
+  --primaryColor90: rgba(252, 203, 52, 0.9); /* Gold Yellow at 90% opacity */
+  --primaryColor100: rgba(252, 203, 52, 1); /* Gold Yellow at 100% opacity */
+  --primaryColor: rgba(252, 203, 52, 1); /* Gold Yellow */
 
   --secondaryColor10: rgba(0, 237, 138, 0.1);
   --secondaryColor20: rgba(0, 237, 138, 0.2);
@@ -89,10 +89,10 @@
   --secondaryColor50: rgba(0, 237, 138, 0.5);
   --secondaryColor60: rgba(0, 237, 138, 0.6);
   --secondaryColor70: rgba(0, 237, 138, 0.7);
-  --secondaryColor80: rgba(0, 237, 138, 0.8);
-  --secondaryColor90: rgba(0, 237, 138, 0.9);
-  --secondaryColor100: rgba(0, 237, 138, 1);
-  --secondaryColor: rgba(35, 230, 134, 1);
+  --secondaryColor80: rgba(252, 237, 138, 0.8);
+  --secondaryColor90: rgba(252, 208, 66, 0.9);
+  --secondaryColor100: rgba(252, 203, 52, 1);
+  --secondaryColor: rgba(252, 203, 52, 1);
 
   --successColor10: rgba(30, 180, 80, 0.1);
   --successColor20: rgba(30, 180, 80, 0.2);
